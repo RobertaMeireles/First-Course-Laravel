@@ -24,5 +24,6 @@ Route::group(['prefix' => 'app'], function () {
 Route::get('/', [MainController::class, 'index'])->name('name.home');
 Route::get('/about', [AboutController::class, 'index'])->name('name.about');
 Route::get('/contact', [ContactController::class, 'index'])->name('name.contact');
+Route::post('/contact', [ContactController::class, 'index'])->name('name.contact');
 
 
